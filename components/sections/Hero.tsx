@@ -103,7 +103,7 @@ export default function Hero() {
         >
           Sistem manajemen sekolah all-in-one: absensi digital, pembayaran SPP
           online, rapor online, dan notifikasi otomatis ke orang tua — semua
-          dalam satu platform. Mulai dari Rp 300.000/bulan.
+          dalam satu platform.
         </p>
 
         {/* CTA Buttons */}
@@ -113,7 +113,7 @@ export default function Hero() {
           className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
         >
           <a
-            href="https://wa.me/6281517053450?text=Halo%2C%20saya%20tertarik%20dengan%20Teman%20Sekolah.%20Boleh%20info%20lebih%20lanjut%3F"
+            href="https://wa.me/6281281790149?text=Halo%2C%20saya%20tertarik%20dengan%20Teman%20Sekolah.%20Boleh%20info%20lebih%20lanjut%3F"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-3 px-7 sm:px-8 py-3.5 sm:py-4 bg-[#01B0F9] text-white font-semibold rounded-full hover:bg-slate-800 transition-all duration-200 hover:shadow-2xl hover:shadow-[#01B0F9]/20 hover:-translate-y-0.5 text-base sm:text-lg w-full sm:w-auto justify-center"

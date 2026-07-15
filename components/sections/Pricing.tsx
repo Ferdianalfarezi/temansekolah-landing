@@ -124,7 +124,7 @@ export default function Pricing() {
 
               {/* CTA */}
               <a
-                href={`https://wa.me/6281517053450?text=${encodeURIComponent(`Halo, saya tertarik dengan paket ${plan.name} Teman Sekolah. Boleh info lebih lanjut?`)}`}
+                href={`https://wa.me/6281281790149?text=${encodeURIComponent(`Halo, saya tertarik dengan paket ${plan.name} Teman Sekolah. Boleh info lebih lanjut?`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`block text-center py-3 px-6 rounded-full font-semibold transition-all duration-200 ${

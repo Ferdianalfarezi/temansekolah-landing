@@ -6,7 +6,6 @@ import Features from "@/components/sections/Features";
 import HowItWorks from "@/components/sections/HowItWorks";
 import UserRoles from "@/components/sections/UserRoles";
 import Advantages from "@/components/sections/Advantages";
-import Pricing from "@/components/sections/Pricing";
 import Statistics from "@/components/sections/Statistics";
 import FAQ from "@/components/sections/FAQ";
 import CTAFinal from "@/components/sections/CTAFinal";
@@ -26,7 +25,6 @@ export default function Home() {
         <HowItWorks />
         <UserRoles />
         <Advantages />
-        <Pricing />
         <Statistics />
         <FAQ />
         <CTAFinal />

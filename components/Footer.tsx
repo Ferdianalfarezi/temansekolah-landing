@@ -4,7 +4,6 @@ import { ExternalLink } from "lucide-react";
 const navLinks = [
   { label: "Fitur", href: "#fitur" },
   { label: "Cara Kerja", href: "#cara-kerja" },
-  { label: "Harga", href: "#harga" },
   { label: "FAQ", href: "#faq" },
   { label: "Kontak", href: "#kontak" },
 ];

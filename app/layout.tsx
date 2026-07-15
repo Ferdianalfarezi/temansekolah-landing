@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | Teman Sekolah",
   },
   description:
-    "Kelola sekolah lebih ringan, orang tua lebih tenang. Absensi digital, pembayaran SPP online, rapor online, dan notifikasi otomatis ke orang tua — semua dalam satu platform. Mulai Rp 300.000/bulan.",
+    "Kelola sekolah lebih ringan, orang tua lebih tenang. Absensi digital, pembayaran SPP online, rapor online, dan notifikasi otomatis ke orang tua — semua dalam satu platform.",
   keywords: [
     "sistem manajemen sekolah",
     "aplikasi absensi sekolah",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Teman Sekolah — Sistem Manajemen Sekolah All-in-One",
     description:
-      "Absensi digital, pembayaran SPP, rapor online, dan notifikasi otomatis ke orang tua — semua dalam satu platform yang mudah digunakan. Mulai Rp 300.000/bulan.",
+      "Absensi digital, pembayaran SPP, rapor online, dan notifikasi otomatis ke orang tua — semua dalam satu platform yang mudah digunakan.",
     type: "website",
     locale: "id_ID",
     url: "https://teman-sekolah.com",

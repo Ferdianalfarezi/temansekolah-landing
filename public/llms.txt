@@ -25,13 +25,7 @@ Teman Sekolah adalah platform manajemen sekolah digital yang menyediakan solusi 
 
 ## Harga
 
-| Paket | Siswa | Harga/Bulan |
-|-------|-------|-------------|
-| Dasar | ≤300 | Rp 300.000 |
-| Standar | 300-600 | Rp 500.000 |
-| Premium | 600+ | Rp 750.000 |
-
-Semua paket termasuk seluruh fitur, unlimited user, update gratis.
+Hubungi tim kami via WhatsApp untuk mendapatkan penawaran harga yang disesuaikan dengan kebutuhan dan ukuran sekolah Anda.
 
 ## Keunggulan
 
@@ -40,7 +34,7 @@ Semua paket termasuk seluruh fitur, unlimited user, update gratis.
 - Data aman dan terpisah per sekolah (multi-tenant)
 - Audit trail keuangan permanen
 - Tanpa biaya tambahan per user
-- Harga terjangkau mulai Rp 300.000/bulan
+- Harga disesuaikan dengan kebutuhan sekolah
 
 ## Kontak
 

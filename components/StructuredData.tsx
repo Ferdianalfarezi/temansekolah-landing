@@ -6,11 +6,12 @@ export default function StructuredData() {
     url: "https://teman-sekolah.com",
     logo: "https://teman-sekolah.com/logo.png",
     description:
-      "Sistem manajemen sekolah all-in-one yang terjangkau — absensi digital, pembayaran SPP online, rapor online, dan komunikasi orang tua dalam satu platform.",
+      "Sistem manajemen sekolah all-in-one — absensi digital, pembayaran SPP online, rapor online, dan komunikasi orang tua dalam satu platform.",
     sameAs: [],
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",
+      telephone: "+6281281790149",
       availableLanguage: "Indonesian",
     },
   };
@@ -21,42 +22,6 @@ export default function StructuredData() {
     name: "Teman Sekolah",
     applicationCategory: "EducationalApplication",
     operatingSystem: "Android, iOS, Web",
-    offers: {
-      "@type": "AggregateOffer",
-      lowPrice: "300000",
-      highPrice: "750000",
-      priceCurrency: "IDR",
-      offerCount: 3,
-      offers: [
-        {
-          "@type": "Offer",
-          name: "Paket Dasar",
-          description: "Untuk sekolah dengan ≤300 siswa (SD kecil)",
-          price: "300000",
-          priceCurrency: "IDR",
-          billingIncrement: 1,
-          unitCode: "MON",
-        },
-        {
-          "@type": "Offer",
-          name: "Paket Standar",
-          description: "Untuk sekolah 300-600 siswa (SD/SMP)",
-          price: "500000",
-          priceCurrency: "IDR",
-          billingIncrement: 1,
-          unitCode: "MON",
-        },
-        {
-          "@type": "Offer",
-          name: "Paket Premium",
-          description: "Untuk sekolah 600+ siswa (SMA/sekolah besar)",
-          price: "750000",
-          priceCurrency: "IDR",
-          billingIncrement: 1,
-          unitCode: "MON",
-        },
-      ],
-    },
     description:
       "Sistem manajemen sekolah all-in-one: absensi digital, pembayaran SPP online, rapor online, notifikasi otomatis ke orang tua, portal RPP, dan manajemen sekolah lengkap.",
     featureList: [
@@ -131,10 +96,10 @@ export default function StructuredData() {
       },
       {
         "@type": "Question",
-        name: "Berapa harga Teman Sekolah?",
+        name: "Bagaimana cara mengetahui harga Teman Sekolah?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Mulai dari Rp 300.000/bulan untuk sekolah dengan ≤300 siswa. Paket Standar Rp 500.000/bulan untuk 300-600 siswa, dan Paket Premium Rp 750.000/bulan untuk 600+ siswa. Semua paket sudah termasuk seluruh fitur tanpa batasan user.",
+          text: "Hubungi tim kami via WhatsApp untuk mendapatkan penawaran harga yang disesuaikan dengan kebutuhan sekolah Anda.",
         },
       },
     ],

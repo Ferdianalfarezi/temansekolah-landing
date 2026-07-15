@@ -24,7 +24,7 @@ export default function CTAFinal() {
           {/* CTA Buttons */}
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="https://wa.me/6281517053450?text=Halo%2C%20saya%20tertarik%20dengan%20Teman%20Sekolah.%20Boleh%20info%20lebih%20lanjut%3F"
+              href="https://wa.me/6281281790149?text=Halo%2C%20saya%20tertarik%20dengan%20Teman%20Sekolah.%20Boleh%20info%20lebih%20lanjut%3F"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 px-8 py-4 bg-accent text-primary font-bold rounded-full hover:bg-accent-400 transition-all duration-200 hover:shadow-xl hover:shadow-accent/25 hover:-translate-y-0.5 text-lg"
