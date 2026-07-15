@@ -1,0 +1,16 @@
+# Teman Sekolah - Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://teman-sekolah.com/sitemap.xml
+
+# AI Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /

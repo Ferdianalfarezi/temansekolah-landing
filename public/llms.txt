@@ -1,0 +1,49 @@
+# Teman Sekolah
+
+> Sistem Manajemen Sekolah All-in-One untuk SD, SMP, dan SMA di Indonesia.
+
+## Tentang
+
+Teman Sekolah adalah platform manajemen sekolah digital yang menyediakan solusi lengkap untuk administrasi sekolah — dari absensi digital, pembayaran SPP online, rapor online, hingga notifikasi otomatis ke orang tua. Semua dalam satu platform yang mudah digunakan, dengan harga mulai Rp 300.000/bulan.
+
+## Fitur Utama
+
+- **Absensi Digital**: Input kehadiran dalam 2 menit dari HP, support offline mode, notifikasi otomatis ke orang tua jika anak tidak hadir
+- **Pembayaran SPP Online**: Buat tagihan, orang tua bayar dari HP, bendahara verifikasi 1 klik, audit trail permanen
+- **Rapor Online**: Input nilai, review wali kelas, ranking otomatis, support Kurikulum Merdeka, export Excel
+- **Notifikasi Otomatis**: Real-time ke orang tua untuk absensi, tagihan, pembayaran, dan rapor
+- **Portal RPP/Modul Ajar**: Guru berbagi RPP digital, upload PDF/Word/PPT
+- **Manajemen Sekolah Lengkap**: Data terpusat, kenaikan kelas massal, jadwal, onboarding via Excel
+
+## Pengguna
+
+- Admin Sekolah (website)
+- Bendahara (website)
+- Kepala Sekolah (website)
+- Guru (aplikasi HP + website)
+- Orang Tua (aplikasi HP)
+
+## Harga
+
+| Paket | Siswa | Harga/Bulan |
+|-------|-------|-------------|
+| Dasar | ≤300 | Rp 300.000 |
+| Standar | 300-600 | Rp 500.000 |
+| Premium | 600+ | Rp 750.000 |
+
+Semua paket termasuk seluruh fitur, unlimited user, update gratis.
+
+## Keunggulan
+
+- Mobile-first (guru dan orang tua cukup pakai HP)
+- Works offline (sinkron otomatis saat online)
+- Data aman dan terpisah per sekolah (multi-tenant)
+- Audit trail keuangan permanen
+- Tanpa biaya tambahan per user
+- Harga terjangkau mulai Rp 300.000/bulan
+
+## Kontak
+
+- Website: https://teman-sekolah.com
+- Admin Panel: https://app.teman-sekolah.com
+- Aplikasi: Teman Sekolah (Play Store & App Store)
