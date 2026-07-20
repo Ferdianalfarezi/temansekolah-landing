@@ -9,8 +9,8 @@ const navLinks = [
 ];
 
 const legalLinks = [
-  { label: "Kebijakan Privasi", href: "#" },
-  { label: "Syarat & Ketentuan", href: "#" },
+  { label: "Kebijakan Privasi", href: "/privacy-policy" },
+  { label: "Syarat & Ketentuan", href: "/terms" },
 ];
 
 export default function Footer() {
