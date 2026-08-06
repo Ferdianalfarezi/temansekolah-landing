@@ -7,6 +7,8 @@ import {
   Bell,
   BookMarked,
   School,
+  MonitorCheck,
+  Package,
 } from "lucide-react";
 
 const features = [
@@ -47,6 +49,18 @@ const features = [
     ],
   },
   {
+    icon: MonitorCheck,
+    title: "CBT (Ujian Online)",
+    color: "bg-indigo-50 text-indigo-600",
+    items: [
+      "Guru buat bank soal pilihan ganda langsung di sistem",
+      "Import soal massal via template Excel",
+      "Siswa ujian dari HP/laptop — anti-curang otomatis",
+      "Pengawas pantau real-time siapa yang keluar layar",
+      "Koreksi otomatis, nilai langsung masuk ke rapor",
+    ],
+  },
+  {
     icon: Bell,
     title: "Notifikasi Otomatis",
     color: "bg-amber-50 text-amber-600",
@@ -66,6 +80,18 @@ const features = [
       "Upload file PDF/Word/PPT atau tulis langsung",
       "Semua guru bisa saling berbagi dan download",
       "Favorit dan search untuk akses cepat",
+    ],
+  },
+  {
+    icon: Package,
+    title: "Pencatatan Inventaris",
+    color: "bg-orange-50 text-orange-600",
+    items: [
+      "Catat semua barang milik sekolah — peralatan & perlengkapan",
+      "Lacak kondisi barang (bagus, perlu perbaikan, rusak)",
+      "Kategorikan berdasarkan sumber dana (BOS, yayasan, unit)",
+      "Import/export data inventaris via Excel",
+      "Audit trail: siapa mengubah apa dan kapan",
     ],
   },
   {

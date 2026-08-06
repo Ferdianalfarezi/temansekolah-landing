@@ -30,6 +30,11 @@ const faqs = [
       "Ya. Template default mengikuti Kurikulum Merdeka, tapi bisa disesuaikan: skala nilai (angka/huruf/deskripsi), komponen wajib/opsional, semuanya bisa dikonfigurasi.",
   },
   {
+    question: "Bagaimana sistem anti-curang di CBT?",
+    answer:
+      "Sistem mendeteksi jika siswa keluar dari layar ujian, membuka tab lain, atau mencoba screenshot. Pengawas bisa memantau real-time dan pause ujian siswa yang mencurigakan. Urutan soal dan jawaban juga diacak otomatis.",
+  },
+  {
     question: "Berapa lama proses onboarding sekolah?",
     answer:
       "Setelah data siswa dan guru disiapkan dalam format Excel, admin bisa upload langsung dan sistem siap digunakan di hari yang sama.",

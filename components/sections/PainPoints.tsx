@@ -1,6 +1,13 @@
 "use client";
 
-import { Clock, CreditCard, BellOff, FileText, BookOpen } from "lucide-react";
+import {
+  Clock,
+  CreditCard,
+  BellOff,
+  FileText,
+  BookOpen,
+  ClipboardList,
+} from "lucide-react";
 
 const painPoints = [
   {
@@ -28,9 +35,15 @@ const painPoints = [
   },
   {
     icon: BookOpen,
-    title: "Materi tidak terdokumentasi",
+    title: "Ujian pakai kertas, koreksi manual",
     description:
-      "RPP dibuat guru masing-masing, tidak ada tempat berbagi antar guru.",
+      "Guru harus cetak soal, koreksi satu per satu, dan input nilai manual — rawan salah dan makan waktu.",
+  },
+  {
+    icon: ClipboardList,
+    title: "Inventaris barang tidak tercatat",
+    description:
+      "Barang sekolah hilang atau rusak tanpa ada catatan. Saat audit, data tidak lengkap.",
   },
 ];
 
@@ -58,9 +71,7 @@ export default function PainPoints() {
               key={index}
               data-aos="fade-up"
               data-aos-delay={index * 100}
-              className={`group relative p-6 md:p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-alert/30 hover:bg-white/10 transition-all duration-300 ${
-                index === 3 ? "md:col-span-1 lg:col-start-1" : ""
-              } ${index === 4 ? "md:col-span-1 lg:col-start-2" : ""}`}
+              className="group relative p-6 md:p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-alert/30 hover:bg-white/10 transition-all duration-300"
             >
               <div className="w-12 h-12 rounded-xl bg-alert/20 flex items-center justify-center mb-5 group-hover:bg-alert/30 transition-colors">
                 <point.icon className="w-6 h-6 text-alert" />

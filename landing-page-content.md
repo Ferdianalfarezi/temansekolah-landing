@@ -54,8 +54,11 @@
 4. **Rapor masih ditulis tangan atau di Excel terpisah**
    Proses input nilai dari guru ke wali kelas ke cetak rapor memakan waktu berminggu-minggu.
 
-5. **Materi pembelajaran tidak terdokumentasi**
-   RPP dibuat guru masing-masing, tidak ada tempat berbagi antar guru.
+5. **Ujian pakai kertas, koreksi manual**
+   Guru harus cetak soal, koreksi satu per satu, dan input nilai manual — rawan salah dan makan waktu.
+
+6. **Inventaris barang tidak tercatat**
+   Barang sekolah hilang atau rusak tanpa ada catatan. Saat audit, data tidak lengkap.
 
 ---
 
@@ -88,19 +91,33 @@
 - Support Kurikulum Merdeka (bisa dicustom)
 - Export ke Excel untuk laporan ke dinas
 
-#### 4. Notifikasi Otomatis ke Orang Tua
+#### 4. CBT (Computer Based Test)
+- Guru buat bank soal pilihan ganda langsung di sistem
+- Import soal massal via template Excel — hemat waktu
+- Siswa ujian dari HP atau laptop dengan sistem anti-curang
+- Pengawas pantau real-time: siapa keluar layar, siapa buka tab lain
+- Koreksi otomatis, nilai langsung masuk ke rapor — tanpa input manual
+
+#### 5. Notifikasi Otomatis ke Orang Tua
 - Anak tidak hadir → orang tua langsung tahu
 - Tagihan baru → notifikasi langsung ke HP
 - Pembayaran disetujui/ditolak → orang tua langsung tahu
 - Rapor tersedia → notifikasi dikirim otomatis
 
-#### 5. Portal RPP / Modul Ajar
+#### 6. Portal RPP / Modul Ajar
 - Guru buat dan simpan RPP/modul ajar digital
 - Bisa tulis langsung di sistem atau upload file (PDF/Word/PPT)
 - Semua guru di sekolah bisa saling berbagi dan download
 - Favorit dan search untuk akses cepat
 
-#### 6. Manajemen Sekolah Lengkap
+#### 7. Pencatatan Inventaris
+- Catat semua barang milik sekolah — peralatan dan perlengkapan
+- Lacak kondisi barang: bagus, perlu perbaikan, atau rusak
+- Kategorikan berdasarkan sumber dana (BOS, yayasan, unit sekolah)
+- Import/export data inventaris via Excel untuk pelaporan
+- Audit trail: siapa mengubah data apa dan kapan
+
+#### 8. Manajemen Sekolah Lengkap
 - Data siswa, kelas, guru, tahun ajaran — semua terpusat
 - Kenaikan kelas massal di akhir tahun
 - Jadwal pelajaran per semester
@@ -191,7 +208,7 @@
 | **Premium** | Sekolah 600+ siswa (SMA/sekolah besar) | Rp 750.000 | Rp 9.000.000 |
 
 **Catatan di bawah tabel harga:**
-- Semua paket sudah termasuk seluruh fitur (absensi, SPP, rapor, RPP, notifikasi)
+- Semua paket sudah termasuk seluruh fitur (absensi, SPP, rapor, CBT, inventaris, RPP, notifikasi)
 - Akses unlimited untuk semua guru dan orang tua
 - Update aplikasi gratis
 - Bayar tahunan di muka (sesuai siklus dana BOS)
@@ -236,6 +253,9 @@ A: Saat ini orang tua transfer manual ke rekening sekolah, lalu upload bukti tra
 
 **Q: Rapor bisa dicustom sesuai kurikulum sekolah kami?**
 A: Ya. Template default mengikuti Kurikulum Merdeka, tapi bisa disesuaikan: skala nilai (angka/huruf/deskripsi), komponen wajib/opsional, semuanya bisa dikonfigurasi.
+
+**Q: Bagaimana sistem anti-curang di CBT?**
+A: Sistem mendeteksi jika siswa keluar dari layar ujian, membuka tab lain, atau mencoba screenshot. Pengawas bisa memantau real-time dan pause ujian siswa yang mencurigakan. Urutan soal dan jawaban juga diacak otomatis.
 
 **Q: Berapa lama proses onboarding sekolah?**
 A: Setelah data siswa dan guru disiapkan dalam format Excel, admin bisa upload langsung dan sistem siap digunakan di hari yang sama.

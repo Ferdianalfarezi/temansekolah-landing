@@ -27,7 +27,7 @@ const plans = [
 ];
 
 const notes = [
-  "Semua paket sudah termasuk seluruh fitur (absensi, SPP, rapor, RPP, notifikasi)",
+  "Semua paket sudah termasuk seluruh fitur (absensi, SPP, rapor, CBT, inventaris, RPP, notifikasi)",
   "Akses unlimited untuk semua guru dan orang tua",
   "Update aplikasi gratis",
   "Bayar tahunan di muka (sesuai siklus dana BOS)",
