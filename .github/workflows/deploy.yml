@@ -1,0 +1,63 @@
+# Push ke main -> build image di GitHub -> VPS pull image baru & restart landing.
+# Bisa juga dijalankan manual: tab Actions -> Deploy VPS -> Run workflow.
+name: Deploy VPS
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-vps
+  cancel-in-progress: false
+
+env:
+  REGISTRY: ghcr.io/ferdianalfarezi
+
+jobs:
+  build:
+    name: Build landing
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: Dockerfile
+          push: true
+          tags: |
+            ${{ env.REGISTRY }}/landing:latest
+            ${{ env.REGISTRY }}/landing:${{ github.sha }}
+          labels: org.opencontainers.image.source=https://github.com/${{ github.repository }}
+          cache-from: type=gha,scope=landing
+          cache-to: type=gha,mode=max,scope=landing
+
+  deploy:
+    name: Deploy ke VPS
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      packages: read
+    steps:
+      - name: Pull & restart di VPS
+        env:
+          SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACTOR: ${{ github.actor }}
+          KNOWN_HOST: "202.155.136.27 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCww/bt+PGCjQ4l5Yo/QL++3C9R4POnLi2P0Z2zw341FtkCQIw4JSWr4piST9A1INsDw70GONzZkDcQNh1MYDX/VCaoov4hRfdR5Syk+dM71BLpyN2eFd3mzNVqp7YobV1Ajp5n9OQMQxnxZnL3bNexdNJ+VgR9dWMtkPlkNJtDTFXeKUzwVqtIgtD50+YJQkFjRG2CXJz4mYW1eKsMB8z/P1D1JbUorv3as3OtODGO11szHvU+9utZl9ZsqMzX1rZYG97afkgH0DihOxy1734IpZzK3XjT32SoP70fttWV8KCLveGtZotSvRU7vaP+nNoC1qvfSybApZGiCDaWf/WaXVpZXNVh9W3IhzW09Ksog/QGQOW8klJLIffN8K2NpF+h0vOBM/U3dE/fiJf0EdVjArcWEOnts6kxeDp5sUmKqzLcd1bVkBjylJJK8ElJiImryoZaXlWnJO0mDjypQ+MgkzmihgEiHwy0QmipSdD+7rKLvEVysJTFZWjcwYNQM1E="
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/id_ed25519 && chmod 600 ~/.ssh/id_ed25519
+          printf '%s\n' "$KNOWN_HOST" > ~/.ssh/known_hosts
+          printf '%s\n%s\n' "$ACTOR" "$TOKEN" | ssh root@202.155.136.27 landing
